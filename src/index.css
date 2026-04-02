@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0c;
+  --color-surface: #111115;
+  --color-surface-light: #1a1a20;
+  --color-border: #2a2a35;
+  --color-border-light: #3a3a48;
+  --color-text: #e8e8ec;
+  --color-text-dim: #888894;
+  --color-text-muted: #555560;
+  --color-accent: #c4a882;
+  --color-accent-dim: #8a7560;
+  --color-knowledge: #7eb8c9;
+  --color-knowledge-dim: rgba(126, 184, 201, 0.15);
+  --color-generator: #b8a0d4;
+  --color-generator-dim: rgba(184, 160, 212, 0.15);
+  --color-assessor: #d4a574;
+  --color-assessor-dim: rgba(212, 165, 116, 0.15);
+  --color-planner: #8bc49a;
+  --color-planner-dim: rgba(139, 196, 154, 0.15);
+  --color-artifact: #c9b87e;
+  --color-artifact-dim: rgba(201, 184, 126, 0.15);
+  --color-menu: #a0a8c4;
+  --color-menu-dim: rgba(160, 168, 196, 0.15);
+  --font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace;
+  --font-sans: 'Inter', 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
